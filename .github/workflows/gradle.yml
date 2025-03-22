@@ -240,6 +240,8 @@ jobs:
 
       - name: Gradle ${{ inputs.gradle_tasks }}
         # language=bash
+        env:
+          CURSEFORGE_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
         run: |-
           ${{ inputs.gradle_setup }}
           ./gradlew ${{ inputs.gradle_tasks }}
