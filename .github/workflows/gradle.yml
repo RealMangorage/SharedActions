@@ -213,6 +213,7 @@ jobs:
         run: |-
           echo "MAVEN_USER=$MAVEN_USER" >> "$GITHUB_ENV"
           echo "MAVEN_PASSWORD=$MAVEN_PASSWORD" >> "$GITHUB_ENV"
+          echo "CURSEFORGE_TOKEN=$CURSEFORGE_TOKEN" >> "$CURSEFORGE_TOKEN"
 
       - name: Set Signing Info
         env:
@@ -240,8 +241,6 @@ jobs:
 
       - name: Gradle ${{ inputs.gradle_tasks }}
         # language=bash
-        env:
-          CURSEFORGE_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
         run: |-
           ${{ inputs.gradle_setup }}
           ./gradlew ${{ inputs.gradle_tasks }}
