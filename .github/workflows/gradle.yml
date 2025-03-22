@@ -70,11 +70,17 @@ on:
         type: string
         default: 'latest'
 
-     # Discord
+      # Discord
       author_icon_url:
         required: false
         type: string
         default: 'https://avatars.githubusercontent.com/u/1390178'
+
+      # Mango
+      CURSEFORGE_TOKEN:
+        description: 'The CurseForge API token'
+        type: string
+        required: true
 
     secrets:
       # Discord Build Notification
