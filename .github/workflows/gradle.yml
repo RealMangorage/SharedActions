@@ -76,15 +76,14 @@ on:
         type: string
         default: 'https://avatars.githubusercontent.com/u/1390178'
 
+    secrets:
+      # Discord Build Notification
+      DISCORD_WEBHOOK:
+        required: false
       # Mango
       CURSEFORGE_TOKEN:
         description: 'The CurseForge API token'
         type: string
-        required: false
-
-    secrets:
-      # Discord Build Notification
-      DISCORD_WEBHOOK:
         required: false
 
       # Gradle
