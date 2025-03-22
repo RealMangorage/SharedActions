@@ -213,7 +213,7 @@ jobs:
         run: |-
           echo "MAVEN_USER=$MAVEN_USER" >> "$GITHUB_ENV"
           echo "MAVEN_PASSWORD=$MAVEN_PASSWORD" >> "$GITHUB_ENV"
-          echo "CURSEFORGE_TOKEN=$CURSEFORGE_TOKEN" >> "$CURSEFORGE_TOKEN"
+          echo "CURSEFORGE_TOKEN=$CURSEFORGE_TOKEN" >> "$GITHUB_ENV"
 
       - name: Set Signing Info
         env:
