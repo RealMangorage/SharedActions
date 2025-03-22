@@ -82,8 +82,6 @@ on:
         required: false
       # Mango
       CURSEFORGE_TOKEN:
-        description: 'The CurseForge API token'
-        type: string
         required: false
 
       # Gradle
