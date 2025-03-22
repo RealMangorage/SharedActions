@@ -80,7 +80,7 @@ on:
       CURSEFORGE_TOKEN:
         description: 'The CurseForge API token'
         type: string
-        required: true
+        required: false
 
     secrets:
       # Discord Build Notification
