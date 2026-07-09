@@ -67,6 +67,8 @@ on:
     secrets:
       DISCORD_WEBHOOK:
         required: false
+      CURSEFORGE_TOKEN:
+        required: false
       PROMOTE_ARTIFACT_WEBHOOK:
         required: false
       PROMOTE_ARTIFACT_USERNAME:
